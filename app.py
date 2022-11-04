@@ -7,4 +7,4 @@ cache = redis.Redis(host='redis', port=6379)
 @app.route('/')
 def hello():
     count = cache.incr('hits')
-    return 'Hello Docker World! I have been seen {} times.\n'.format(count)
+    return 'Hello World! I have been seen {} times.\n'.format(count)
